@@ -31,9 +31,9 @@ async function apiRequest(){
         }else {
             data = data.filter(entry => entry[1].familiarity == familiarity)
         }
-        map = {0:'#one ', 1: '#two ', 2: '#three ', 3: '#four '}
+        map = {0:'#one ', 1: '#two ', 2: '#three ', 3: '#four ', 4:'#five ', 5: '#six ', 6: '#seven ', 7: '#eight '}
         //console.log(data) Object.keys(data).length
-        for(let i=0; i<4; i++){
+        for(let i=0; i<8; i++){
             document.querySelector(map[i]+'h2').innerText = ''
         }
         for(let i=0; i<Object.keys(data).length; i++){
